@@ -160,7 +160,7 @@ private:
     mutable wxRegEx regexObject;
     mutable bool    regexCompiled;
 };
-WX_DECLARE_USER_EXPORTED_OBJARRAY(RegExStruct, RegExArray, DLLIMPORT);
+typedef std::vector<RegExStruct> RegExArray;
 
 /// Helper enum to retrieve compiler commands
 enum CommandType
